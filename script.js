@@ -45,3 +45,22 @@ function handleUserInput() {
         appendMessage('🤖 Ainda estou aprendendo a te ajudar com isso 😊', 'bot');
     }
 }
+function abrirAppBaseadoNoTexto(texto) {
+    texto = texto.toLowerCase();
+
+    if (texto.includes('aniversário') || texto.includes('feriado') || texto.includes('reunião')) {
+        window.location.href = 'calshow://'; // iOS
+    } else if (texto.includes('tempo') || texto.includes('daqui a') || texto.includes('minutos') || texto.includes('horas')) {
+        window.location.href = 'clock://'; // iOS
+    } else if (texto.includes('antes de sair') || texto.includes('durante o dia') || texto.includes('tarefas')) {
+        window.location.href = 'x-apple-reminder://'; // iOS
+    } else if (texto.includes('mensagem') || texto.includes('ligação') || texto.includes('whatsapp')) {
+        window.location.href = 'https://wa.me/';
+    }
+}
+
+// Exemplo: chamar após o envio de uma mensagem do usuário
+document.querySelector('button').addEventListener('click', function() {
+    const input = document.querySelector('input[type="text"]');
+    abrirAppBaseadoNoTexto(input.value);
+});
