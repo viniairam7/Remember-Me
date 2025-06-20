@@ -1,4 +1,3 @@
-
 let chat = document.getElementById('chat');
 let awaitingLightTime = false;
 
