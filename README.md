@@ -1,24 +1,33 @@
-# rememberme
-Still in development.
-aplicação web estilo chatbot para ajudar o usuário a criar lembretes simples. Ele reconhece comandos para lembrar aniversários e tarefas, como desligar a luz, e responde com ações correspondentes.
+# 🧠 RememberMe
 
-Funcionalidades
-Conversa em estilo chatbot.
+Um assistente de lembretes simples, leve e inteligente — ideal para o seu dia a dia!
 
-Detecta pedido para lembrar aniversários e oferece abrir o aplicativo Calendário.
+## ✨ Funcionalidades
 
-Pergunta horário para tarefas e simula lembretes.
+🔍 Digite frases normalmente e o sistema detecta o tipo de lembrete:
 
-Interface simples com design inspirado no Snapchat (cores amarelo e branco).
+- 📅 **Datas especiais**  
+  Lembretes como “aniversário da Ana” ou “reunião amanhã” abrem diretamente o **Calendário**.
 
-Como usar
-Abra o arquivo index.html em um navegador moderno.
+- ⏰ **Contagem de tempo**  
+  Frases como “em 10 minutos” ou “daqui a 2 horas” levam você ao **Cronômetro / Relógio**.
 
-Digite frases como:
+- 💬 **Mensagens e ligações**  
+  Se você digitar “mandar mensagem para João” ou “ligar para a Maria”, o sistema abre o **WhatsApp**.
 
-"Preciso lembrar do aniversário da minha mãe."
+- 📝 **Notas e anotações rápidas**  
+  Frases como “anotar compras” ou “escrever ideias” abrem diretamente o app de **Notas**.
 
-"Não posso esquecer de desligar a luz."
+## 💛 Visual leve e moderno
 
-Interaja com o chatbot seguindo as instruções na tela.
+- Cores suaves (amarelo pastel e cinza claro)
+- Interface em estilo **chat com balõezinhos**
+- Responsivo e acessível em celulares
 
+## 📱 Experiência integrada
+
+O RememberMe conecta você com os aplicativos já instalados no seu celular para agilizar sua rotina.
+
+---
+
+> 💡 Ideal para quem quer um lembrete rápido sem perder tempo com menus e cliques.
