@@ -1,3 +1,4 @@
+// sw.js
 const CACHE_NAME = 'me-lembre-cache-v1';
 const urlsToCache = [
   './index.html',
@@ -24,4 +25,14 @@ self.addEventListener('fetch', event => {
         return response || fetch(event.request);
       })
   );
+});
+
+// NOVO: Adicionar listener para o evento de notificação de clique
+self.addEventListener('notificationclick', event => {
+  event.notification.close(); // Fecha a notificação
+
+  // Opcional: Você pode abrir uma URL ou focar a aplicação quando a notificação é clicada
+  // event.waitUntil(
+  //   clients.openWindow('./index.html') // Abre a sua PWA
+  // );
 });
