@@ -1,3 +1,4 @@
+/* style.css */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #FFFBEA; /* Amarelo pastel suave */
@@ -56,7 +57,8 @@ body {
 
 .input-container {
     display: flex;
-    padding: 12px;
+    /* Alterado de 12px para 8px para diminuir a distância */
+    padding: 8px; /* Reduzindo o padding para diminuir a "distância" */
     background-color: #FFFDE7;
     border-top: 2px solid #FFEB3B;
     border-radius: 20px 20px 0 0;
@@ -111,6 +113,11 @@ button:hover {
     .header {
         font-size: 20px;
         padding: 12px;
+    }
+
+    /* Ajustar também o input-container para telas menores, se necessário */
+    .input-container {
+        padding: 6px; /* Ainda menor em telas pequenas */
     }
 
     input[type="text"] {
